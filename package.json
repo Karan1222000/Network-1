@@ -1,5 +1,5 @@
 {
-  "homepage": "http://Harpreet-8119.github.io/sample-project",
+  "homepage": "http://Harpreet-8119.github.io/practice-project",
   "name": "social-network",
   "version": "0.1.0",
   "description": "Social network for developers",
@@ -8,6 +8,9 @@
     "start": "node server",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "build":"react-scripts build",
+    "test":"react-scripts test",
+    "eject":"react-scripts eject",
     "server": "nodemon server",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
