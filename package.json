@@ -1,35 +1,88 @@
 {
-  
+  "homepage": "http://Karan1222000.github.io/Network-1",
   "name": "social-network",
+  
   "version": "0.1.0",
+  
   "description": "Social network for developers",
+  
   "main": "server.js",
+  
   "scripts": {
-    "start": "node server",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "server": "nodemon server",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  
+    
+  "start": "node server",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  
+    
+  "build": "react-scripts build",
+  
+    
+  "test": "react-scripts test",
+  
+    
+  "eject": "react-scripts eject",
+  
+    
+  "server": "nodemon server",
+  
+    
+  "client": "npm start --prefix client",
+  
+    
+  "dev": "concurrently \"npm run server\" \"npm run client\"",
+  
+    
+  "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  
   },
+  
   "author": "George Maximenko",
+  
   "license": "MIT",
+  
   "dependencies": {
-    "axios": "^0.21.2",
-    "bcryptjs": "^2.4.3",
-    "config": "^3.3.3",
-    "express": "^4.18.1",
-    "express-validator": "^6.6.1",
-    "gravatar": "^1.8.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.27",
-    "normalize-url": "^5.3.1"
+  
+    
+  "axios": "^0.21.2",
+  
+    
+  "bcryptjs": "^2.4.3",
+  
+    
+  "config": "^3.3.3",
+  
+    
+  "express": "^4.18.1",
+  
+    
+  "express-validator": "^6.6.1",
+  
+    
+  "gravatar": "^1.8.1",
+  
+    
+  "jsonwebtoken": "^8.5.1",
+  
+    
+  "mongoose": "^5.9.27",
+  
+    
+  "normalize-url": "^5.3.1"
+  
   },
+  
   "devDependencies": {
-    "concurrently": "^5.2.0",
-    "gh-pages": "^5.0.0",
-    "nodemon": "^2.0.4"
+  
+    
+  "concurrently": "^5.2.0",
+  
+    
+  "gh-pages": "^5.0.0",
+  
+    
+  "nodemon": "^2.0.4"
+  
   }
 }
