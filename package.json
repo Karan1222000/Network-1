@@ -1,13 +1,11 @@
 {
-  "homepage": "http://Harpreet-8119.github.io/Web-Website",
+  
   "name": "social-network",
   "version": "0.1.0",
   "description": "Social network for developers",
   "main": "server.js",
   "scripts": {
     "start": "node server",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
